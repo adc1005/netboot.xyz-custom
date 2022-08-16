@@ -12,7 +12,7 @@ goto ${menu} ||
 goto change_menu
 
 :change_menu
-chain --autofree https://raw.githubusercontent.com/${github_user}/netboot.xyz-custom/master/windows.ipxe || goto error
+chain --autofree https://raw.githubusercontent.com/adc1005/netboot.xyz-custom/master/windows.ipxe || goto error
 goto custom_menu
 
 :custom_exit
