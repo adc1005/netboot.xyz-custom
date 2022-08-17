@@ -4,8 +4,8 @@
 # https://www.microsoft.com
 
 set winpe_arch x64
-set win_image WinSrv_2019_English_x64
-set win_base_url http://172.16.92.56:8080/WinPE
+set win_image Win_Server_2019_64Bit_English
+set win_base_url http://172.16.92.57:8080/WinPE
 goto ${menu} ||
 
 :windows
@@ -23,8 +23,18 @@ goto ${win_version}
 
 :image_set
 menu Image
-item WinSrv_2016_English_x64 WinSrv_2016_English_x64
-item WinSrv_2019_English_x64 WinSrv_2019_English_x64
+item Win_Server_2016_64Bit_English Win_Server_2016_64Bit_English
+item Win_Server_2016_64Bit_French Win_Server_2016_64Bit_French
+item Win_Server_2019_64Bit_English Win_Server_2019_64Bit_English
+item Win_Server_2019_64Bit_French Win_Server_2019_64Bit_French
+item Win_Server_2022_64Bit_English Win_Server_2022_64Bit_English
+item Win_Server_2022_64Bit_French Win_Server_2022_64Bit_French
+item Win_10_21H2_64Bit_English Win_10_21H2_64Bit_English
+item Win_10_21H2_64Bit_French Win_10_21H2_64Bit_French
+item Win_11_v1_64Bit_English Win_11_v1_64Bit_English
+item Win_11_v1_64Bit_French Win_11_v1_64Bit_French
+item Win_11_21H2_64Bit_English_withoutTPMCheck Win_11_21H2_64Bit_English_withoutTPMCheck
+item Win_11_21H2_64Bit_French_withoutTPMCheck Win_11_21H2_64Bit_French_withoutTPMCheck
 
 choose win_image && goto windows
 
